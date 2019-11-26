@@ -1,0 +1,19 @@
+DROP DATABASE espancaballsclub;
+CREATE DATABASE espancaballsclub;
+
+USE espancaballsclub;
+
+CREATE TABLE contas(
+	nome varchar(20) NOT NULL,
+	password varchar(20) NOT NULL,
+	email varchar(30) NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE loja(
+	ID int(10) AUTO_INCREMENT PRIMARY KEY,
+	produto varchar(20) NOT NULL,
+	preco varchar(20) NOT NULL,
+	stock varchar(20) NOT NULL,
+	imagem varchar(200) DEFAULT 'img/compras/sem-imagem.jpg',
+	tipo varchar(50) NOT NULL
+);
